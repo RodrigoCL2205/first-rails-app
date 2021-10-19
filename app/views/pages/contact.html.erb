@@ -1,1 +1,7 @@
 <h1>Contact us</h1>
+
+<ul>
+  <% @teachers.each do |teacher| %>
+  <li><%= teacher.capitalize %></li>
+  <% end %>
+</ul>

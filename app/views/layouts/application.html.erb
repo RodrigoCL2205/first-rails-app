@@ -10,6 +10,15 @@
   </head>
 
   <body>
+  <div style="background: violet; padding: 16px">This is navbar
+    <p><%= link_to "Know more about us", about_path %></p>
+    <p><%= link_to "contact us", contact_path %></p>
+    <form action="/contact" method="get">
+      <input type="text" name="teacher" value="<%= params[:teacher] %>"  placeholder="Who are you looking for?">
+      <input type="text" name="message">
+      <input type="submit">
+    </form>
+  </div>
     <%= yield %>
   </body>
 </html>
